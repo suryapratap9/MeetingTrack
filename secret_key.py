@@ -1,0 +1,2 @@
+API_KEY = "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"
+AZURE_KEY = ""

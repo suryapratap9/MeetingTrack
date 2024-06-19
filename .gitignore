@@ -1,0 +1,5 @@
+secret_key.py
+output.wav
+__pycache__/
+credentials.json
+token.json

@@ -1,0 +1,102 @@
+{
+	"info": {
+		"_postman_id": "d67a9869-95c5-4056-a9f3-9aa1c0c54ab6",
+		"name": "Startup Hackathon",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "14056226"
+	},
+	"item": [
+		{
+			"name": "Send Data",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "audio",
+							"type": "file",
+							"src": "/D:/Projects/Startup Waali Hackathon/output.wav"
+						},
+						{
+							"key": "language",
+							"value": "English (India)",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://meetingsync123.azurewebsites.net/process_audio",
+					"protocol": "https",
+					"host": [
+						"meetingsync123",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"process_audio"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Analyse Weekly Data",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://meetingsync123.azurewebsites.net/analyse_weekly_data",
+					"protocol": "https",
+					"host": [
+						"meetingsync123",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"analyse_weekly_data"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Ask Question",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "question",
+							"value": "who is facing blockers?",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://meetingsync123.azurewebsites.net/questions",
+					"protocol": "https",
+					"host": [
+						"meetingsync123",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"questions"
+					],
+					"query": [
+						{
+							"key": "question",
+							"value": "hi",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
